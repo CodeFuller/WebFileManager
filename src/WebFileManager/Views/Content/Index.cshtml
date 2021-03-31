@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Content";
+}
+
+@model UploadFileViewModel
+
+<form enctype="multipart/form-data" method="post">
+    <div class="input-group">
+        <div class="input-group-append">
+            <input asp-for="File" type="file">
+            <button class="btn btn-primary" type="submit">Upload</button>
+        </div>
+    </div>
+</form>
